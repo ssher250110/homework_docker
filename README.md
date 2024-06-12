@@ -16,3 +16,20 @@
 * Оберните в Docker Compose Django-проект с БД PostgreSQL.
 * Допишите в docker-compose.yaml работу с Redis.
 * Допишите в docker-compose.yaml работу с Celery.
+
+## Инструкция для запуска контейнера:
+
+1. Клонируйте данный репозиторий к себе на локальную машину:
+
+```bash
+    git clone https://github.com/ssher250110/homework_docker.git
+```
+
+2. Настройте виртуальное окружение env или poetry и установите библиотеки и их зависимости.
+3. В файле /.env_example подставьте свои переменные окружения и переименуйте файл в .env
+4. Запустите Docker
+5. Введите команду в терминале:
+
+```bash
+docker-compose up -d --build 
+```
