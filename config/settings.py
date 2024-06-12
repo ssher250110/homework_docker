@@ -162,6 +162,6 @@ CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 CELERY_BEAT_SCHEDULE = {
     "check_last_login_user": {
         "task": "users.tasks.check_last_login_user",
-        "schedule": timedelta(seconds=5),  # run at every 5th minute
+        "schedule": timedelta(days=1),  # run at every 5th minute
     },
 }
